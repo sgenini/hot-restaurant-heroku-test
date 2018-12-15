@@ -1,0 +1,52 @@
+<!-- Bootstrap-Powered HTML -->
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>
+        Hot Restaurant
+    </title>
+
+    <!-- We link our html to the Bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Container Div -->
+    <div class="container">
+        <div class="jumbotron text-center mt-3">
+            <h1 class="text-center"><i class="fab fa-gripfire"></i> Hot Restaurant</h1>
+            <div class="col-8 mx-auto"><hr></div>
+            <h5 class="text-center mb-4"><small>Book your seat before they are all gone!</small></h5>
+            <button class="btn btn-primary" id="view-tables-btn"><i class="far fa-list-alt"></i> View Tables</button> <button class="btn btn-danger" id="make-reservation-btn"><i class="far fa-calendar-alt"></i> Make Reservation</button>
+        </div>
+
+        <!-- Start Row -->
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card card-default">
+                    <div class="card-body text-center">
+                        <a href="/api/tables">API Table Link</a> | <a href="api/waitlist">API Waitlist Link</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Row -->
+
+    </div>
+    <!-- Close Container -->
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.9/firebase.js"></script>
+<script src="https://cdn.jsdelivr.net/momentjs/2.14.0/moment.min.js"></script>
+
+
+</html>
