@@ -49,6 +49,10 @@ app.get("/all", function(req,res){
     res.sendFile(path.join(__dirname, "list.html"));
 });
 
+app.get("/home", function(req,res){
+    res.sendFile(path.join(__dirname, "index.html"));
+});
+
 
 // Displays current tables
 app.get("/api/tables", function(req,res){
